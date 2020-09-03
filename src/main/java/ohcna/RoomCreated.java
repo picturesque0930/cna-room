@@ -4,7 +4,9 @@ public class RoomCreated extends AbstractEvent {
 
     private Long id;
     private String name;
-    private String floor;
+    private Long floor;
+    private String status;
+
 
     public Long getId() {
         return id;
@@ -20,11 +22,25 @@ public class RoomCreated extends AbstractEvent {
     public void setName(String name) {
         this.name = name;
     }
-    public String getFloor() {
-        return floor;
+    // public String getFloor() {
+    //     return floor;
+    // }
+
+    // public void setFloor(String floor) {
+    //     this.floor = floor;
+    // }
+    public Long getFloor() {
+    return floor;
     }
 
-    public void setFloor(String floor) {
+    public void setFloor(Long floor) {
         this.floor = floor;
+    }
+        public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
